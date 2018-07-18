@@ -28,7 +28,7 @@ namespace ProjectNorthwind1.Models
 
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE";
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -66,7 +66,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, [Phone], [Fax] FROM Customers";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -125,7 +125,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT EmployeeID, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo FROM Employees";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -194,7 +194,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT OrderID, ProductID, UnitPrice, Quantity, Discount FROM [Order Details]";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -235,7 +235,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry FROM Orders";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -303,7 +303,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued FROM Products";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -354,7 +354,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT ShipperID, CompanyName, Phone FROM Shippers";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -392,7 +392,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT SupplierID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage FROM Suppliers";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -459,7 +459,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT CategoryID, CategoryName, Description FROM Categories WHERE CategoryID = " + id;
             
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -494,7 +494,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT CustomerID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, [Phone], [Fax] FROM Customers WHERE CustomerID = '" + id + "'";
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -549,7 +549,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT EmployeeID, LastName, FirstName, Title, TitleOfCourtesy, BirthDate, HireDate, Address, City, Region, PostalCode, Country, HomePhone, Extension, Photo, Notes, ReportsTo FROM Employees WHERE EmployeeID = " + id;
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -614,7 +614,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT OrderID, CustomerID, EmployeeID, OrderDate, RequiredDate, ShippedDate, ShipVia, Freight, ShipName, ShipAddress, ShipCity, ShipRegion, ShipPostalCode, ShipCountry FROM Orders WHERE OrderID = " + id;
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -677,7 +677,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT ProductID, ProductName, SupplierID, CategoryID, QuantityPerUnit, UnitPrice, UnitsInStock, UnitsOnOrder, ReorderLevel, Discontinued FROM Products WHERE ProductID = " + id;
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -725,7 +725,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT ShipperID, CompanyName, Phone FROM Shippers WHERE ShipperID = " + id;
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
@@ -761,7 +761,7 @@ namespace ProjectNorthwind1.Models
             string aSQL = "SELECT SupplierID, CompanyName, ContactName, ContactTitle, Address, City, Region, PostalCode, Country, Phone, Fax, HomePage FROM Suppliers WHERE SupplierID = " + id;
 
             aConnection.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0;
-            Data Source=C:\Users\NoVinSkii\Documents\College Work\Fall 2017\Database Concepts\Northwind.mdb";
+            Data Source=C:INSERT PATH TO NORTHWIND FILE;
             aConnection.Open();
 
             OleDbCommand aCommand = aConnection.CreateCommand();
